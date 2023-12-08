@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import ItemCount from "../ItemCount/ItemCount.Jsx";
+import ItemCount from "../ItemCount/ItemCount.jsx";
 import "../ItemCount/ItemCount.css";
 import "./ItemDetail.css";
 
