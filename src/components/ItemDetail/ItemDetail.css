@@ -1,0 +1,25 @@
+.all{
+  display: flex;
+}
+.title{
+  display: flex;
+  justify-content: center;
+}
+.list{
+   font-size: 1.1em;
+   margin: 5px 7px;
+}
+
+
+/* ajustar tamaño del sweet alert */
+.swal2-popup {
+  width: 400px; /* Ajusta el ancho a tu preferencia */
+  height: 150px;
+  font-size: 10px; /* Ajusta el tamaño de fuente a tu preferencia */
+}
+
+
+.imgDetail{
+  width: 350px;
+  height: 350px;
+}
