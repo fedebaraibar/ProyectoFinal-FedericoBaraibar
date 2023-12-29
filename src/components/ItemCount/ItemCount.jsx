@@ -6,7 +6,7 @@ import useCartContext from "../../hook/useCartContext";
 // eslint-disable-next-line react/prop-types
 const ItemCount = ({ stock, item}) => {
   const { addToCart} = useCartContext()
-  const [cantidad, setCantidad] = useState(0);
+  const [cantidad, setCantidad] = useState(1);
 
   const incrementar = () => {
     if (stock > cantidad) {
@@ -15,14 +15,14 @@ const ItemCount = ({ stock, item}) => {
   };
 
   const disminuir = () => {
-    if (cantidad > 0) {
+    if (cantidad > 1) {
       setCantidad(cantidad - 1);
     }
   };
 
   const restablecer = () => {
     const cantidadActual = cantidad;
-    setCantidad(0);
+    setCantidad(1);
     addToCart(item, cantidadActual);
     Swal.fire({
       position: "top-end",

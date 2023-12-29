@@ -1,8 +1,6 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a Technohouse- Tu Destino para la Última Tecnología en Hardware!
 
-Currently, two official plugins are available:
+En Technohouse, entendemos que cada clic, cada comando y cada tarea importante requieren herramientas confiables y eficientes. Nos enorgullece presentarte una selección cuidadosamente curada de hardware de última generación, diseñado para llevar tus experiencias informáticas al siguiente nivel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://proyecto-final-federico-baraibar-7wy3.vercel.app/
