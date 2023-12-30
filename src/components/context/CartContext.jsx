@@ -30,9 +30,14 @@ function CartContextProvider({ children }) {
     const totalQty = cart.reduce((acc, current) => acc + (current.qty || 0), 0);
     return isNaN(totalQty) ? "0" : totalQty.toString();
   };
+
   const removeTCart = (id) => {
     const newCart = cart.filter((e) => e.id !== id);
     setCart(newCart);
+  };
+
+  const clearCart = () => {
+    setCart([]);
   };
 
   const incrementCart = (id) => {
@@ -64,6 +69,7 @@ function CartContextProvider({ children }) {
         removeTCart,
         incrementCart,
         decrementCart,
+        clearCart,
       }}
     >
       {children}

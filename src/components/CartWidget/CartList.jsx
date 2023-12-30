@@ -4,7 +4,8 @@ import useCartContext from "../../hook/useCartContext.jsx";
 import "./cart.css";
 
 const CartList = () => {
-  const { cart, removeTCart, incrementCart, decrementCart } = useCartContext();
+  const { cart, removeTCart, incrementCart, decrementCart, clearCart } =
+    useCartContext();
 
   const handleDelete = (id) => {
     removeTCart(id);
@@ -13,6 +14,11 @@ const CartList = () => {
   const onIncrementCart = (id) => {
     incrementCart(id);
   };
+
+  const handleClearCart = () => {
+    clearCart();
+  };
+
   const onDecrementCart = (id) => {
     decrementCart(id);
   };
@@ -30,7 +36,7 @@ const CartList = () => {
         <Link to="/chekin">
           <button className="finishbuy">Finalizar compra</button>
         </Link>
-        <button className="finishbuy" onClick={() => handleDelete(item.id)}>
+        <button className="finishbuy" onClick={handleClearCart}>
           Vaciar Carrito
         </button>
       </div>
