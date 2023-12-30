@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import useCartContext from "../../hook/useCartContext";
 
 // eslint-disable-next-line react/prop-types
-const ItemCount = ({ stock, item }) => {
+const ItemCount = ({ stock, item}) => {
   const { addToCart } = useCartContext();
   const [cantidad, setCantidad] = useState(1);
 

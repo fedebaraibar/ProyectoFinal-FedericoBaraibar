@@ -17,6 +17,7 @@ const ItemDetail = ({ item }) => {
         </div>
         <ul className="list">
           <li>{item.description}</li>
+          <li>{item.category}</li>
           <li>${item.price}</li>
           <li>Cantidad en stock: {item.stock}</li>
           <ItemCount stock={stockAsNumber} item={item}/>
