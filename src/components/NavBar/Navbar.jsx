@@ -1,42 +1,41 @@
-import CartWidget from "../CartWidget/CartWidget"
-import { Link } from "react-router-dom"
-
+import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-   return(
+  return (
     <div>
-    <nav>
+      <nav>
         <div className="div1">
-        <Link to={'/'} className="linkContainer">
-        <img src="/tablero.png" alt="" className="logo"/>
+          <Link to={"/"} className="linkContainer">
+            <img src="/tablero.png" alt="" className="logo" />
             <h1 className="titleLogo">TechnoHouse</h1>
-        </Link>
+          </Link>
 
-            <ul>
-                <li>
-                    <Link to={'/'}>Inicio</Link>            
-                </li>
-                <li>
-                   <Link to={'/category/PlacDVideo'}>
-                      <div className="LinkText">
-                        <span>Placas</span>
-                        <span>de</span>
-                        <span>video</span>
-                      </div>
-                   </Link>
-                </li>
-                <li>
-                   <Link to={'/category/Monitor'}>Monitores</Link>
-                </li>
-                <li>
-                   <Link to={'/category/Ram'}>Rams</Link>
-                </li>
-            </ul>
-            <CartWidget/>    
+          <ul>
+            <li>
+              <Link to={"/"}>Inicio</Link>
+            </li>
+            <li>
+              <Link to={"/category/PlacDVideo"}>
+                <div className="LinkText">
+                  <span>Placas</span>
+                  <span>de</span>
+                  <span>video</span>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to={"/category/Monitor"}>Monitores</Link>
+            </li>
+            <li>
+              <Link to={"/category/Ram"}>Rams</Link>
+            </li>
+          </ul>
+          <CartWidget />
         </div>
-    </nav>
+      </nav>
     </div>
-   )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

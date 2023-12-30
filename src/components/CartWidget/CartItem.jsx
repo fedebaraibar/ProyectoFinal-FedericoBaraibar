@@ -1,20 +1,25 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const CartItem = ({ item, handleDelete, handleIncrement, handleDecrement }) => {
- return (
+  return (
     <tr>
-      <td>{item.id}</td>
       <td>{item.title}</td>
       <td>{item.price * item.qty}</td>
       <td>{item.qty}</td>
       <td>
-        <button className="onDecrement" onClick={() => handleDecrement(item.id)}>
+        <button
+          className="onDecrement"
+          onClick={() => handleDecrement(item.id)}
+        >
           -
         </button>
         <button className="onDelete" onClick={() => handleDelete(item.id)}>
           X
         </button>
-        <button className="onIncrement" onClick={() => handleIncrement(item.id)}>
+        <button
+          className="onIncrement"
+          onClick={() => handleIncrement(item.id)}
+        >
           +
         </button>
       </td>

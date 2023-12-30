@@ -1,87 +1,96 @@
-.cartWidg{
-    background: rgb(13, 247, 13);
-    /* background: radial-gradient(circle, rgba(148,65,149,1) 38%, rgba(226,201,203,1) 83%); */
-    text-align: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    font-size:1.5em;
-    margin: 3px 3px;
-    display: flex;
-  }
-  .iconCart{
-   margin-left: 13px;
-   color: black;
-  }
-.titleDetail{
+.cartWidg {
+  background: rgb(13, 247, 13);
+  text-align: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 1.5em;
+  margin: 3px 3px;
+  display: flex;
+}
+.iconCart {
+  margin-left: 13px;
+  color: black;
+}
+.titleDetail {
   text-align: center;
 }
 
-.divDOS{
-    text-align: end;
-    font-size: 0.7em;
-    margin-bottom: 1px;
+.divDOS {
+  text-align: end;
+  font-size: 0.7em;
+  margin-bottom: 1px;
 }
 
 .cartWidg .divDOS span {
-    margin-left: 2px;
-    text-decoration: none !important;
-    display: inline-block;
-  }
-  
-  
-  /* CartList.css */
+  margin-left: 2px;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+/* CartList.css */
 
 .cart-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px; /* Espacio superior entre la tabla y otros elementos */
+  margin-top: 30px; /* Espacio superior entre la tabla y otros elementos */
 }
 
-.cart-table th, .cart-table td {
+.cart-table th,
+.cart-table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
 .cart-table th {
-  background-color:black;
+  background-color: black;
 }
 
 .delete-column {
   width: 150px;
-  text-align: center; 
+  text-align: center;
 }
 
-.cartVacio{
+.cartVacio {
   text-align: center;
   font-style: italic;
-  color: #666; 
+  color: rgb(172, 170, 170);
   padding: 8px;
 }
 
-.cartVacio .Link{
+.cartVacio .btn {
   text-decoration: none;
-  color: green;
+  color: black;
+  background-color: rgb(13, 247, 13);
 }
 
-.onDecrement{
+.onDecrement {
   width: 30px;
   background-color: red;
 }
 
-.onIncrement{
+.onIncrement {
   width: 30px;
   background-color: green;
 }
 
-.onDelete{
+.onDelete {
   width: 40px;
 }
 
-
-.finishbuy{
+.finishbuy {
   width: 150px;
   height: 50px;
   background: rgb(13, 247, 13);
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.ClearCart {
+  width: 150px;
+  height: 50px;
+  background: rgb(13, 247, 13);
+  border-radius: 10px;
+  margin-right: 5px;
 }

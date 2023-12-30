@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&display=swap');
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'IBM Plex Mono', monospace;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
 }
-body{
+body {
   margin: 0;
   background: black;
   color: rgb(13, 247, 13);
 }
 /* NavBar */
-.div1{
+.div1 {
   display: flex;
   background-color: rgb(13, 247, 13);
 }
-.div1 ul{
+.div1 ul {
   list-style: none;
   display: flex;
   margin-left: auto;
@@ -31,77 +31,74 @@ body{
   text-decoration: none;
   color: black;
 }
-.LinkText{
- display: flex;
- align-items: center;
+.LinkText {
+  display: flex;
+  align-items: center;
 }
 .LinkText span {
-  margin-right: 5px; 
+  margin-right: 5px;
 }
-.linkContainer{
+.linkContainer {
   display: flex;
   text-decoration: none;
 }
-.titleLogo{
+.titleLogo {
   color: black;
   text-decoration: none;
   font-size: 30px;
   margin-top: 20px;
   margin-left: 10px;
 }
-.logo{
+.logo {
   width: 10%;
   margin: 3px 5px;
 }
 
-.greetdiv{
+.greetdiv {
   text-align: center;
 }
 
 /* Productos */
 
-.prods{
+.prods {
   display: flex;
-  flex-wrap:  wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.imgsProds{
+.imgsProds {
   width: 300px;
   margin: 4px 4px;
 }
 
-.prod{
+.prod {
   display: flex;
   flex-direction: column;
-  width: 350px; 
-  height: 400px; 
+  width: 350px;
+  height: 400px;
   color: rgb(13, 247, 13);
   text-decoration: none;
   text-align: center;
   font-weight: bold;
   position: relative;
-  
 }
- .bord{
+.bord {
   border: solid 4px;
   border-color: rgb(13, 247, 13);
   margin: 10px 10px;
   border-radius: 5%;
-} 
+}
 
-.botonAddCard{
+.botonAddCard {
   position: absolute;
-  bottom: 10px; 
+  bottom: 10px;
   left: 50%; /* Centrar horizontalmente */
   transform: translateX(-50%); /* Centrar horizontalmente */
   color: black;
   font-size: 1.1em;
-
 }
-.botn{
+.botn {
   padding: 2px 2px;
   color: black;
-  background: rgb(13, 247, 13);  
+  background: rgb(13, 247, 13);
 }
-

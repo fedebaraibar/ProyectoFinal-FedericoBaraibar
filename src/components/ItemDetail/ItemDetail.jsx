@@ -37,3 +37,4 @@ ItemDetail.propTypes = {
 };
 
 export default ItemDetail;
+

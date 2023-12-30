@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import useCartContext from "../../hook/useCartContext";
 
 // eslint-disable-next-line react/prop-types
-const ItemCount = ({ stock, item}) => {
-  const { addToCart} = useCartContext()
+const ItemCount = ({ stock, item }) => {
+  const { addToCart } = useCartContext();
   const [cantidad, setCantidad] = useState(1);
 
   const incrementar = () => {
@@ -36,12 +36,18 @@ const ItemCount = ({ stock, item}) => {
   return (
     <div>
       <div className="count">
-        <button onClick={disminuir} className="botonMat">-</button>
+        <button onClick={disminuir} className="botonMat">
+          -
+        </button>
         <h2>{cantidad}</h2>
-        <button onClick={incrementar} className="botonMat">+</button>
+        <button onClick={incrementar} className="botonMat">
+          +
+        </button>
       </div>
       <div>
-        <button onClick={restablecer} className="botonAdd">Agregar al carrito</button>
+        <button onClick={restablecer} className="botonAdd">
+          Agregar al carrito
+        </button>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./error.css"
+import "./error.css";
 const Error = () => {
   return (
     <div className="main-error">
@@ -11,7 +11,9 @@ const Error = () => {
       </div>
       <div className="redirection">
         <h2>PAGINA NO ENCONTRADA</h2>
-        <Link to="/" className="link"><h3>VOLVER A INICIO</h3></Link>
+        <Link to="/" className="link">
+          <h3>VOLVER A INICIO</h3>
+        </Link>
       </div>
     </div>
   );

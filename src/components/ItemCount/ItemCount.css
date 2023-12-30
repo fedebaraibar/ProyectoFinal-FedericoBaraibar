@@ -1,16 +1,16 @@
-.count{
-display: flex;
+.count {
+  display: flex;
 }
 
-.botonMat{
-    width: 35px;
-    height: 40px;
-    background: rgb(13, 247, 13);
-    background: linear-gradient(0deg, rgb(13, 247, 13) 18%, black 100%);
-    margin: 2px 7px;
+.botonMat {
+  width: 35px;
+  height: 40px;
+  background: rgb(13, 247, 13);
+  background: linear-gradient(0deg, rgb(13, 247, 13) 18%, black 100%);
+  margin: 2px 7px;
 }
 
-.botonAdd{
-    background: rgb(13, 247, 13);
-    background: linear-gradient(0deg, rgb(13, 247, 13) 18%, black 100%);
+.botonAdd {
+  background: rgb(13, 247, 13);
+  background: linear-gradient(0deg, rgb(13, 247, 13) 18%, black 100%);
 }

@@ -12,7 +12,7 @@ function ItemDetailContainer() {
   useEffect(() => {
     setLoading(true);
     const queryDb = getFirestore();
-    const queryDoc = doc(queryDb, 'products', id);
+    const queryDoc = doc(queryDb, "products", id);
 
     getDoc(queryDoc)
       .then((r) => setItem({ id: r.id, ...r.data() }))
@@ -20,7 +20,7 @@ function ItemDetailContainer() {
         console.log(error);
       })
       .finally(() => {
-        setLoading(false); 
+        setLoading(false);
       });
   }, [id]);
 
