@@ -5,7 +5,7 @@ import useCartContext from "../../hook/useCartContext";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
-const ItemCount = ({ stock, item}) => {
+const ItemCount = ({ stock, item }) => {
   const { addToCart } = useCartContext();
   const [cantidad, setCantidad] = useState(1);
   const [isCount, setIsCount] = useState(true);
@@ -33,9 +33,9 @@ const ItemCount = ({ stock, item}) => {
       showConfirmButton: false,
       timer: 1500,
     });
-    setIsCount(false)
+    setIsCount(false);
   };
-  
+
   return (
     <div>
       <div className="count">
@@ -48,20 +48,24 @@ const ItemCount = ({ stock, item}) => {
         </button>
       </div>
       <div>
-        {isCount ?
-        <button onClick={restablecer} className="botonAdd">
-          Agregar al carrito
-        </button>
-        : 
-        <Link to="/cart" className="btn btn-success">
-        Ir al carrito
-      </Link>
-}
+        {isCount ? (
+          <button onClick={restablecer} className="botonAdd">
+            Agregar al carrito
+          </button>
+        ) : (
+          <>
+            <Link to="/cart" className="btn btn-success">
+              Ir al carrito
+            </Link>
+            <Link to="/" className="btn btn-success">
+              Ir al Home
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );
 };
-
 
 //estamos definiendo que 'stock' es una propiedad requerida y debe ser de tipo número.
 ItemCount.propTypes = {
